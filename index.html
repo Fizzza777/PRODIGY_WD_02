@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chrono | Premium Stopwatch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background-container">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <main class="container">
+      <div class="stopwatch-card">
+        <header class="header">
+          <h1>Stopwatch</h1>
+        </header>
+
+        <div class="timer-display">
+          <span id="time-display">00:00:00.00</span>
+        </div>
+
+        <div class="controls">
+          <button id="reset-btn" class="btn btn-secondary" disabled>
+            <span class="icon">↺</span> Reset
+          </button>
+          <button id="start-stop-btn" class="btn btn-primary">
+            <span class="icon">▶</span> Start
+          </button>
+          <button id="lap-btn" class="btn btn-secondary" disabled>
+            <span class="icon">⚑</span> Lap
+          </button>
+        </div>
+      </div>
+
+      <div class="laps-container">
+        <div class="laps-header">
+          <span>Lap</span>
+          <span>Split</span>
+          <span>Total</span>
+        </div>
+        <ul id="laps-list" class="laps-list">
+          <!-- Laps will be injected here -->
+        </ul>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
